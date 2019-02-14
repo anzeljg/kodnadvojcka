@@ -1,0 +1,489 @@
+@font-face {
+	font-family: 'Barrio';
+	src: /*url('../font/barrio-regular-webfont.woff2') format('woff2'),*/
+		 url('../font/barrio-regular-webfont.woff') format('woff'),
+		 url('../font/barrio-regular-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Bang';
+	src: /*url('../font/bang_whack_pow2-webfont.woff2') format('woff2'),*/
+		 url('../font/bang_whack_pow2-webfont.woff') format('woff'),
+		 url('../font/bang_whack_pow2-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body, form {font-family: 'Bang' !important; font-size: 16pt; font-weight: normal !important;}
+body {margin:0px;}
+a {font-family:'Bang';}
+a:hover {color: #7ca6fc !important;}
+h1 {font-family:'Barrio';}
+h2 {font-family:'Barrio'; font-size: 18pt;}
+h3 {font-family:'Barrio';}
+div {line-height: 1.2;}
+
+.why-flex-container{
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:center;
+	align-content:flex-start;
+	align-items:flex-start;
+	-webkit-justify-content:space-around;
+	justify-content:space-around;
+	width:100%;
+	max-width:1024px;
+	margin:0 auto;
+}
+.why-flex-item{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	position:relative;
+	text-align:center;
+	width:380px;
+	margin:10px;
+}
+
+::-webkit-scrollbar {
+	background-color: #000;
+	width: 1.25em;
+}
+::-webkit-scrollbar-thumb {
+	background-color: rgba(66,128,207,1);
+	border: .25em solid #000;
+	border-radius: 1.25em;
+}
+
+.rollBook {
+	display: block;
+	width: 180px;
+	height: 28px;
+	padding-top: 105px;
+	background: url('../img/GetTheBook_Roll_1.png'), url('../img/GetTheBook_Bar.png');
+	background-size: 175px 104px, 180px 32px;
+	background-position: center top, center bottom;
+	background-repeat: no-repeat, no-repeat;
+	color: white;
+	font-size: 14pt;
+	text-decoration: none;
+}
+.rollBook:hover {
+	background: url('../img/GetTheBook_Roll_2.png'), url('../img/GetTheBook_Bar.png');
+	background-size: 175px 104px, 180px 32px;
+	background-position: center top, center bottom;
+	background-repeat: no-repeat, no-repeat;
+	color: white !important;
+	text-decoration: underline;
+}
+.rollTwins {
+	display: block;
+	width: 200px;
+	height: 28px;
+	padding-top: 105px;
+	background: url('../img/MeetTheTwins_Roll_1.png'), url('../img/MeetTheTwins_Bar.png');
+	background-size: 175px 104px, 200px 32px;
+	background-position: center top, center bottom;
+	background-repeat: no-repeat, no-repeat;
+	color: white;
+	font-size: 14pt;
+	text-decoration: none;
+}
+.rollTwins:hover {
+	background: url('../img/MeetTheTwins_Roll_2.png'), url('../img/MeetTheTwins_Bar.png');
+	background-size: 175px 104px, 200px 32px;
+	background-position: center top, center bottom;
+	background-repeat: no-repeat, no-repeat;
+	color: white !important;
+	text-decoration: underline;
+}
+.rollThink {
+	display: block;
+	width: 220px;
+	height: 28px;
+	padding-top: 105px;
+	background: url('../img/Computational_Roll_1.png'), url('../img/Computational_Bar.png');
+	background-size: 175px 104px, 220px 32px;
+	background-position: center top, center bottom;
+	background-repeat: no-repeat, no-repeat;
+	color: white;
+	font-size: 14pt;
+	text-decoration: none;
+}
+.rollThink:hover {
+	background: url('../img/Computational_Roll_2.png'), url('../img/Computational_Bar.png');
+	background-size: 175px 104px, 220px 32px;
+	background-position: center top, center bottom;
+	background-repeat: no-repeat, no-repeat;
+	color: white !important;
+	text-decoration: underline;
+}
+.rollAbout {
+	display: block;
+	width: 200px;
+	height: 28px;
+	padding-top: 105px;
+	background: url('../img/Creators_Roll_1.png'), url('../img/Creators_Bar.png');
+	background-size: 175px 104px, 200px 32px;
+	background-position: center top, center bottom;
+	background-repeat: no-repeat, no-repeat;
+	color: white;
+	font-size: 14pt;
+	text-decoration: none;
+}
+.rollAbout:hover {
+	background: url('../img/Creators_Roll_2.png'), url('../img/Creators_Bar.png');
+	background-size: 175px 104px, 200px 32px;
+	background-position: center top, center bottom;
+	background-repeat: no-repeat, no-repeat;
+	color: white !important;
+	text-decoration: underline;
+}
+
+#TheLogo {
+	width: 17%;
+}
+	
+#TheLinks {
+	width: 83%;
+}
+
+.menuB {
+	width: 180px;
+}
+.menuT {
+	width: 200px;
+}
+.menuC {
+	width: 220px;
+}
+.menuA {
+	width: 200px;
+}
+
+.new-btn { 
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 4px;
+	padding: 15px;
+	position: relative !important;
+	float: none !important;
+	display: block;
+	overflow: hidden;
+	margin: 0 auto;
+	background: gray;
+	border: 1px solid gray;
+	border-color: gray gray gray;
+	-webkit-box-shadow: -3px 4px 16px 3px #27273b;
+	-moz-box-shadow: -3px 4px 16px 3px #27273b;
+	box-shadow: -3px 4px 16px 3px #27273b;
+	-webkit-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	-o-transition: all .2s linear;
+	transition: all .2s linear;
+}
+.new-btn:hover {
+	transform: scale(1.05);
+}
+/*.new-btn-text {
+	color: #fff !important;
+	display: block;
+	text-align: center;
+}*/
+/*.new-btn:hover .new-btn-text {
+	opacity: 1;
+}*/
+.new-btn:active {
+	transform: scale(.95);
+	box-shadow: 0 0 0 1px #458a8c,0 1px 1px #d5d5d5,inset 0 1px 0 rgba(255,255,255,.8),0 1px 1px 2px #fff;
+}
+
+.new-btn-text {
+	display: block;
+	text-align: right !important;
+	padding-right: 20px;
+	opacity: .8;
+}
+
+.Order-1 {
+	-webkit-order: 1 !important; /* Safari */
+	order: 1 !important;
+}
+	
+.Order-2 {
+	-webkit-order: 2 !important; /* Safari */
+	order: 2 !important;
+}
+.yellowBtn {
+	width: 280px; 
+	-webkit-box-shadow: -8px 6px 18px 4px #81a59b; 
+	-moz-box-shadow: -8px 6px 18px 4px #81a59b; 
+	box-shadow: -8px 6px 18px 4px #81a59b; 
+	height: 32px; 
+	border-radius: 0px; 
+	background-color: #ffe82f; 
+	border: 0px;
+}
+.greenBtn {
+	width: 180px; 
+	-webkit-box-shadow: -8px 6px 18px 4px #3c768a; 
+	-moz-box-shadow: -8px 6px 18px 4px #3c768a; 
+	box-shadow: -8px 6px 18px 4px #3c768a; 
+	height: 32px; 
+	border-radius: 0px; 
+	background-color: #83be64; 
+	border: 0px;
+}
+.darkShadow {
+	-webkit-box-shadow: -8px 6px 18px 4px #093c67; 
+	-moz-box-shadow: -8px 6px 18px 4px #093c67; 
+	box-shadow: -8px 6px 18px 4px #093c67;
+}
+
+.a-btn-symbol {
+	top: 5px;
+	left: 10px;
+	display: inline-block;
+}
+
+.blackText {
+	font-family:'Barrio';
+	font-size: 26px; 
+	line-height: 16px; 
+	font-weight: normal; 
+	padding-top: 8px; 
+	color: black !important;
+}
+.whiteText {
+	font-family:'Barrio';
+	font-size: 22px; 
+	line-height: 16px; 
+	font-weight: normal; 
+	padding-top: 8px; 
+	padding-right: 10px;
+	color: white !important;
+}
+.whiteHeaderLink {
+	display: block;
+	color: white;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 14pt;
+}
+.whiteHeaderLink:hover {
+	color: white !important;
+	text-decoration: underline;
+}
+.whiteMoreLink {
+	display: block;
+	color: white;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 20pt;
+}
+.whiteMoreLink:hover {
+	color: white !important;
+	text-decoration: underline;
+}
+.whiteFooterLink {
+	display: block;
+	color: white;
+	padding-top: 25px;
+	font-size: 14pt;
+	text-decoration: none;
+}
+.whiteFooterLink:hover {
+	color: white !important;
+	text-decoration: underline;
+}
+.fBook {
+	width: 150px; margin: 0px;
+}
+.fCode {
+	width: 200px; margin: 0px;
+}
+.fThink {
+	width: 200px; margin: 0px;
+}
+.fAbout {
+	width: 200px; margin: 0px;
+}
+.fLogo {
+	width: 150px; margin: 0px;
+}
+.fTranslation {
+	width: 150px; margin: 0px;
+}
+
+.logoImage {
+	width: 60%; 
+	max-width: 200px;
+	padding-left: 20px; 
+	padding-top: 10px;
+}
+
+@media (min-width: 701px) and (max-width: 1025px) {
+	.logoImage {
+	width: 100%; 
+	padding-left: 20px; 
+	padding-top: 10px;
+	}
+}
+
+@media (min-width: 50px) and (max-width: 700px) {
+	.logoImage {
+	width: 100%; 
+	padding-left: 20px; 
+	padding-top: 10px;
+	}
+	
+	.Order-1 {
+	-webkit-order: 2 !important; /* Safari */
+	order:		 2 !important;
+	}
+	
+	.Order-2 {
+	-webkit-order: 1 !important; /* Safari */
+	order:		 1 !important;
+	}
+	
+	#TheLogo {
+	width: 60%;
+	}
+	
+	#TheLinks {
+	width: 40%;
+	}
+	.whiteHeaderLink {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 10pt;
+	}
+	.menuB {
+	width: 100%;
+	}
+	.menuT {
+	width: 100%;
+	}
+	.menuC {
+	width: 100%;
+	}
+	.menuA {
+	width: 100%;
+	}
+	.menuImage {
+	width: 100px;
+	}
+	
+	/***************************************************/
+	.rollBook {
+	display: block;
+	width: 220px;
+	height: 18px;
+	padding-top: 60px;
+	background: url('../img/GetTheBook_Roll_1.png'), url('../img/GetTheBook_Bar.png');
+	background-size: 100px 59px, 100px 20px;
+	background-position: center top, center bottom;
+	background-repeat: no-repeat, no-repeat;
+	color: white;
+	font-size: 10pt;
+	text-decoration: none;
+	}
+	.rollBook:hover {
+	background: url('../img/GetTheBook_Roll_2.png'), url('../img/GetTheBook_Bar.png');
+	background-size: 100px 59px, 100px 20px;
+	background-position: center top, center bottom;
+	background-repeat: no-repeat, no-repeat;
+	color: white !important;
+	text-decoration: underline;
+	}
+	.rollTwins {
+	display: block;
+	width: 220px;
+	height: 18px;
+	padding-top: 60px;
+	background: url('../img/MeetTheTwins_Roll_1.png'), url('../img/MeetTheTwins_Bar.png');
+	background-size: 100px 59px, 110px 20px;
+	background-position: center top, center bottom;
+	background-repeat: no-repeat, no-repeat;
+	color: white;
+	font-size: 10pt;
+	text-decoration: none;
+	}
+	.rollTwins:hover {
+	background: url('../img/MeetTheTwins_Roll_2.png'), url('../img/MeetTheTwins_Bar.png');
+	background-size: 100px 59px, 110px 20px;
+	background-position: center top, center bottom;
+	background-repeat: no-repeat, no-repeat;
+	color: white !important;
+	text-decoration: underline;
+	}
+	.rollThink {
+	display: block;
+	width: 220px;
+	height: 18px;
+	padding-top: 60px;
+	background: url('../img/Computational_Roll_1.png'), url('../img/Computational_Bar.png');
+	background-size: 100px 59px, 160px 20px;
+	background-position: center top, center bottom;
+	background-repeat: no-repeat, no-repeat;
+	color: white;
+	font-size: 10pt;
+	text-decoration: none;
+	}
+	.rollThink:hover {
+	background: url('../img/Computational_Roll_2.png'), url('../img/Computational_Bar.png');
+	background-size: 100px 59px, 160px 20px;
+	background-position: center top, center bottom;
+	background-repeat: no-repeat, no-repeat;
+	color: white !important;
+	text-decoration: underline;
+	}
+	.rollAbout {
+	display: block;
+	width: 220px;
+	height: 18px;
+	padding-top: 60px;
+	background: url('../img/Creators_Roll_1.png'), url('../img/Creators_Bar.png');
+	background-size: 100px 59px, 130px 20px;
+	background-position: center top, center bottom;
+	background-repeat: no-repeat, no-repeat;
+	color: white;
+	font-size: 10pt;
+	text-decoration: none;
+	}
+	.rollAbout:hover {
+	background: url('../img/Creators_Roll_2.png'), url('../img/Creators_Bar.png');
+	background-size: 100px 59px, 130px 20px;
+	background-position: center top, center bottom;
+	background-repeat: no-repeat, no-repeat;
+	color: white !important;
+	text-decoration: underline;
+	}
+	/***************************************************/
+	
+	.fBook {
+	width: 100%; margin: 0px;
+	padding-top: 0px;
+	}
+	.fCode {
+	width: 100%; margin: 0px;
+	padding-top: 0px;
+	}
+	.fThink {
+	width: 100%; margin: 0px;
+	padding-top: 0px;
+	}
+	.fAbout {
+	width: 100%; margin: 0px;
+	padding-top: 0px;
+	}
+	.fLogo {
+	width: 100%; margin: 0px;
+	padding-top: 30px;
+	}
+	.whiteFooterLink {
+	
+	}
+}
